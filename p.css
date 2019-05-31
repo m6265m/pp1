@@ -1,47 +1,81 @@
 * {
     margin: 0;
     padding: 0;
+  overflow-x: hidden;
+  font-family: Montserrat, sans-serif !important;
+  background-color: white;
+  color: black;
     
   }
-
 
   /* PRODUCT PAGE */
 
   #red{
     /* background-color: red; */
-    display: grid;
     width: 100vw;
     height: fit-content;
   }
 
   #nav{
-    background-color: yellow;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: orange;
+    position: sticky;
+
   }
+
 
   #menu{
     background-color: pink;
+    padding: 3em 3em 2em 2em;
+    color: black;
+  }
+
+  #men{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 2em;
+    background-color: aqua;
+
   }
 
   #cat{
     /* background-color: brown; */
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
-    padding: 3em 3em 2em 2em;
+    grid-template-columns:  repeat(5,1fr);
+    padding: 3em 0em 2em 3em;
     color: black;
     text-align: center;
-    border-bottom: 2px solid black;
+    /*border-bottom: 2px solid black;*/
+    width: 90vw;
+      top: 2vh;
   }
 
-  #ima{
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
-    
+  #line{
+    background-color: black;
+    width: 81vw;
+    height: 1px;
+    margin-left: 8vw;
   }
+
+#images {
+  width: 80vw;
+  padding-left: 10vw;
+}
+#ima{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  /*grid-template-rows:  1fr 1fr 1fr;*/
+  /*grid-gap: 5px;*/
+}
+
+#ima li img{
+  width: 80%;
+  height: auto;
+  place-self: center;
+  /*background-color: orange;*/
+  padding: 2em 0;
+}
 
   li{
     list-style: none;
@@ -65,6 +99,18 @@ a{
   width: 100%;
   transition: width 0.3s;
 
+}
+
+@media (max-width: 500px){
+  #ima{
+    grid-template-columns:  1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  #ima{
+    grid-template-columns:  1fr 1fr;
+  }
 }
 
 
