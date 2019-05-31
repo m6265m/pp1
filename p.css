@@ -16,11 +16,11 @@
     height: fit-content;
 }
 
+
 #nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*background-color: orange;*/
-    position: sticky;
     top: 0;
 
 }
@@ -60,11 +60,18 @@
     /*padding: 0 1em;*/
 
 }
+.content {
+     padding: 1px;
+ }
+.sticky + .content {
+    padding-top: 10px;
+}
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
+
 #category{
     background-color: white;
 }
